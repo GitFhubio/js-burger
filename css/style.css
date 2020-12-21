@@ -112,3 +112,6 @@ input{
 .ingredient-container img{
   border-radius: 50%;
 }
+#output{
+  font-size:30px;
+}

@@ -48,11 +48,11 @@ if(selezionati.length<2)
 {alert('Devi inserire più di un valore');}
 
  console.log(selezionati);
-  output.innerHTML=sum;
+  output.innerHTML='$ '+ sum;
 
   if(coupon.includes(discount.value)){
 
-   output.innerHTML= sum*0.8;
+   output.innerHTML='$ '+ sum*0.8;
   }
 }
 }
