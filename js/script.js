@@ -20,7 +20,7 @@ var coupon=['immanuelkant1724','cyberbug2077','nandomartellone90'];
 
 btn.addEventListener('click',function(){
   btn.classList.add('clicked');
-  btn.classList.remove('no-clicked');
+  btn.classList.remove('brown');
   var sum=0;
   var baseprice=50;
   var selezionati=[];
@@ -36,7 +36,7 @@ btn.addEventListener('click',function(){
         sum+=price;
       }
     }
-
+    
     // al posto di crearmi l'array da solo col push potevo fare:
     // var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
     // e avrei avuto direttamente l'array dei check da usare poi nella verifica

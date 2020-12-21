@@ -1,16 +1,88 @@
+/* RESET CSS */
 *{padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
-.ingredient-container img{
-  width:50px;
-  height:auto;
+/* CLASSI UTILITY */
+.clicked{
+  background-color: #fc6f25;
+  border:2px solid black;
 }
+.brown{
+  background-color:#fdb228;
+}
+.pinkred{background-color: #cd2c4f;
+}
+.lightbrown{
+  background-color:#fff3de;
+}
+.p50lr{
+  padding:0 50px;
+}
+.clearfix::after{
+  display:table;
+  content:"";
+  clear:both;
+}
+.flex{
+  display:flex;
+}
+.fl{
+  float:left;
+}
+/* LAYOUT */
+.wrapper{
+  width:100vw;
+  height:100vh;
+  max-width:100;
+}
+.main{width:calc(100% - 50px);
+}
+header{
+  height:150px;
+  line-height:150px;
+}
+.content{
+  height:calc(100vh - 250px);
+  padding-bottom:200px;
+  padding-top:50px;
+}
+
+.logo{
+  background-image: url('../img/hamburger.png');
+  background-size: contain;
+  /* -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg); */
+  transform: rotate(-30deg);
+  position:fixed;
+  right:10px;
+  top:-80px;
+  width:300px;
+  height:300px;
+  border-radius: 50%;
+}
+#nameyourhamburger{
+  border:none;
+  font-size: 26px;
+  margin-bottom: 40px;
+}
+/* INGREDIENTS */
+
+.content p{
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
 label>div{
   width:50px;
   height:50px;
   border-radius: 50%;
+}
+label img{
+  width:100%;
+  height:auto;
 }
 #cheese,#lettuce,#egg{
   background-color:#ff0050;
@@ -20,92 +92,6 @@ label>div{
 }
 #ketchup{background-color:#f797f4;}
 #mustard{background-color:#ba675b;}
-/* classi utility */
-.clicked{
-  background-color: red;
-  border:3px solid black;
-}
-.p50lr{
-  padding:0 50px;
-}
-.clearfix::after{
-  display:table;
-  content:"";
-  clear:both;
-
-}
-.flex{
-  display:flex;
-}
-.fl{
-  float:left;
-}
-.wrapper{
-  width:100vw;
-  height:100vh;
-  max-width:100;
-}
-.main{width:calc(100% - 50px);
-}
-header{
-  background-color: #fdb228;
-  height:150px;
-  line-height:150px;
-}
-.content{
-  height:calc(100vh - 250px);
-  padding-bottom:200px;
-  padding-top:50px;
-}
-footer{
-  background-color: #cd2c4f;
-  height:100px;
-  line-height: 100px;
-  color:#fff;
-  justify-content:space-between;
-}
-.sidebar{
-  background-color: #fff3de;
-  width:50px;
-  height:100vh;
-}
-input{
-  display:block;
-}
-
-
-#hamburger{
-  border:none;
-  font-size: 26px;
-  margin-bottom: 40px;
-}
-.calculate{
-  text-align: center;
-}
-#btn{
-  margin-top: 40px;
-  width:150px;
-  height:50px;
-  font-weight:600;
-  font-size: 18px;
-  border-radius: 10px;
-}
-.no-clicked{
-  background-color: #fdb228;
-}
-
-.sconto-coupon{
-  justify-content:start;
-  align-items: center;
-}
-.sconto-coupon input{
-  margin-left:10px;
-  background-color: #fff3de;
-  border:none;
-  width:80%;
-  height:30px;
-  border-radius:10px;
-}
 
 .ingredient-container{
   flex-direction: column;
@@ -116,22 +102,12 @@ label.flex{
   align-items:center;
   margin:10px 0;
 }
-
 .ingredient-container span{
   margin-left: 20px;
 }
 .ingredient-container img{
   border-radius: 50%;
 }
-#output{
-  font-size:30px;
-}
-
-/* label.flex:after{
-position:relative;
-content:'add';
-left:60px;
-} */
 
 label.flex {
   position:relative;
@@ -157,18 +133,10 @@ label.flex input {
   height: 25px;
   width: 25px;
   border-radius:3px;
-  background-color: red;
 }
-
-/* On mouse-over, add a grey background color */
+/* On mouse-over, add effect */
 /* label.flex:hover input ~ .checkmark {
-background-color: red;
 } */
-/* When the checkbox is checked, add a blue background */
-label.flex input:checked ~ .checkmark {
-  background-color: red;
-
-}
 
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
@@ -176,12 +144,10 @@ label.flex input:checked ~ .checkmark {
   position: absolute;
   display: none;
 }
-
 /* Show the checkmark when checked */
 .ingredient-container .flex input:checked ~ .checkmark:after {
   display: block;
 }
-
 /* Style the checkmark/indicator */
 .ingredient-container .flex .checkmark:after {
   left: 9px;
@@ -200,24 +166,42 @@ label.flex input:checked ~ .checkmark {
 label.flex:after{
   position:relative;
   content:'add';
-  color:red;
+  color: red;
   left:100px;
 }
-.logo{
-
-  background-image: url('../img/hamburger.png');
-  background-size: contain;
-  -webkit-transform: rotate(-30deg);
-  -moz-transform: rotate(-30deg);
-  -ms-transform: rotate(-30deg);
-  -o-transform: rotate(-30deg);
-  transform: rotate(-30deg);
-
-  position:fixed;
-  right:10px;
-  top:-80px;
-  width:300px;
-  height:300px;
-  border-radius: 50%;
-  background-color: #fdb228;
+.sconto-coupon{
+  justify-content:start;
+  align-items: center;
+}
+.sconto-coupon input{
+  margin-left:10px;
+  border:none;
+  width:80%;
+  height:30px;
+  border-radius:10px;
+}
+.calculate{
+  text-align: center;
+}
+#btn{
+  margin-top: 40px;
+  width:150px;
+  height:50px;
+  font-weight:600;
+  font-size: 18px;
+  border:none;
+  border-radius: 5px;
+}
+.sidebar{
+  width:50px;
+  height:100vh;
+}
+footer{
+  height:100px;
+  line-height: 100px;
+  color:#fff;
+  justify-content:space-between;
+}
+#output{
+  font-size:30px;
 }
