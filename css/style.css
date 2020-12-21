@@ -81,6 +81,7 @@ input{
   align-items: center;
 }
 .sconto-coupon input{
+  margin-left:10px;
   background-color: #fff3de;
   border:none;
   width:800px;
@@ -102,8 +103,12 @@ input{
   position:relative;
   left:20px;
   bottom:1px;
+  color:red;
 
 }
 .ingredient-container span{
   margin:0 10px;
+}
+.ingredient-container img{
+  border-radius: 50%;
 }
