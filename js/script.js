@@ -9,9 +9,9 @@
 // - tutto ciò viene "generato", quindi calcolato (prezzo e/o sconto), al click sul pulsante.
 
 var btn=document.getElementById('btn');
-var div=document.getElementsByClassName('ingredient-container')[0];
-var checkbox=div.getElementsByTagName('input');
-var ouput=document.getElementById('output');
+var ingredients=document.getElementsByClassName('ingredient-container')[0];
+var checkbox=ingredients.getElementsByTagName('input');
+var output=document.getElementById('output');
 var humburger=document.getElementById('hamburger');
 var discount=document.getElementById('discount');
 // var lista;
@@ -36,10 +36,14 @@ btn.addEventListener('click',function(){
         sum+=price;
       }
     }
+
+    // al posto di crearmi l'array da solo col push potevo fare:
+    // var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+    // e avrei avuto direttamente l'array dei check da usare poi nella verifica
     if(selezionati.length<2)
     {alert('Devi inserire più di un valore');}
 
-    console.log(selezionati);
+    // console.log(selezionati);
     output.innerHTML='$ '+ (baseprice+sum);
 
     if(coupon.includes(discount.value)){

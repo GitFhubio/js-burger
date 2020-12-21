@@ -221,3 +221,8 @@ label.flex:after{
   border-radius: 50%;
   background-color: #fdb228;
 }
+
+.dinamico{
+color:yellow;
+background-color: black;
+}
