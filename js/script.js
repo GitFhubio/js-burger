@@ -15,7 +15,7 @@
 // E soprattutto divertitevi!
 // Questo esercizio durerà un po', ci metteremo il tempo giusto per comprenderne ogni suo aspetto, e non lasciare niente al caso.
 // N.B: Non vi allego alcuna immagine perché per oggi vi chiedo di non lavorare sulla parte estetica, lo faremo domani. Oggi solo funzionalità!
-Daje branco! (edited)
+// Daje branco! (edited)
 
 
 var btn=document.getElementById('btn');
@@ -26,12 +26,14 @@ var price=document.getElementById('price');
 var lista=[];
 btn.addEventListener('click',function(){
 
+var sum=0;
 for (var i = 0; i < checkbox.length; i++) {
 
 if (checkbox[i].checked)
-{lista.push(checkbox[i].value);
+{sum+=parseInt(checkbox[i].value);
 };
 
+price.innerHTML=sum;
 }
 
 
