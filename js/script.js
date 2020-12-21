@@ -21,23 +21,37 @@
 var btn=document.getElementById('btn');
 var div=document.getElementsByClassName('ingredient-container')[0];
 var checkbox=div.getElementsByTagName('input');
-var price=document.getElementById('price');
+var ouput=document.getElementById('output');
+var humburger=document.getElementById('hamburger');
+var discount=document.getElementById('discount');
 // var lista;
 var lista=[];
+var coupon=['abcdef','ghilmno'];
+
 btn.addEventListener('click',function(){
-
 var sum=0;
+var selezionati=[];
+var price;
+if(hamburger.value=='')
+{alert('Devi inserire il nome del tuo hamburger');}
+else{
 for (var i = 0; i < checkbox.length; i++) {
-
-if (checkbox[i].checked)
-{sum+=parseInt(checkbox[i].value);
-};
-
-price.innerHTML=sum;
+if(checkbox[i].checked){
+price=parseInt(checkbox[i].value);
+selezionati.push(price);
+sum+=price;
 }
+}
+if(selezionati.length<2)
+{alert('Devi inserire più di un valore');}
 
+ console.log(selezionati);
+  output.innerHTML=sum;
 
+  if(coupon.includes(discount.value)){
 
-
-
-})
+   output.innerHTML= sum*0.8;
+  }
+}
+}
+ )
