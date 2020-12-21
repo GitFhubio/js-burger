@@ -31,7 +31,7 @@ btn.addEventListener('click',function(){
   else{
     for (var i = 0; i < checkbox.length; i++) {
       if(checkbox[i].checked){
-        price=parseInt(checkbox[i].value);
+        price=parseFloat(checkbox[i].value);
         selezionati.push(price);
         sum+=price;
       }
