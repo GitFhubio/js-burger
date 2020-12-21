@@ -29,6 +29,8 @@ var lista=[];
 var coupon=['abcdef','ghilmno'];
 
 btn.addEventListener('click',function(){
+btn.classList.add('clicked');
+btn.classList.remove('no-clicked');
 var sum=0;
 var selezionati=[];
 var price;
