@@ -55,10 +55,6 @@ input{
   display:block;
 }
 
-.left-input,.right-input{
-display:inline-block;
-width:48%;
-}
 
 #hamburger{
   border:none;
@@ -69,6 +65,7 @@ width:48%;
   text-align: center;
 }
 #btn{
+    margin-top: 40px;
     width:150px;
     height:50px;
     font-weight:600;
@@ -89,4 +86,14 @@ width:48%;
   width:800px;
   height:30px;
   border-radius:10px;
+}
+
+.ingredient-container{
+  flex-direction: column;
+  flex-wrap: wrap;
+  height:250px;
+}
+.ingredient-container .flex{
+  align-items:center;
+  margin:10px 0;
 }
