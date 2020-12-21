@@ -2,13 +2,20 @@
   margin: 0;
   box-sizing: border-box;
 }
+/* classi utility */
+
+.p50lr{
+  padding:0 50px;
+}
 .clearfix::after{
   display:table;
   content:"";
   clear:both;
 
 }
-
+.flex{
+  display:flex;
+}
 .fl{
   float:left;
 }
@@ -17,28 +24,23 @@
   height:100vh;
   max-width:100;
 }
-.main{
-      width:calc(100% - 50px);
+.main{width:calc(100% - 50px);
 }
 header{
   background-color: #fdb228;
   height:150px;
   line-height:150px;
-
 }
 .content{
 height:calc(100vh - 250px);
-
 }
-
 footer{
   background-color: #cd2c4f;
  height:100px;
  line-height: 100px;
  color:#fff;
-
+ justify-content:space-between;
 }
-
 .sidebar{
   background-color: #fff3de;
   width:50px;
