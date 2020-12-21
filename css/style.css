@@ -97,3 +97,13 @@ input{
   align-items:center;
   margin:10px 0;
 }
+.ingredient-container input:after{
+  content:'add';
+  position:relative;
+  left:20px;
+  bottom:1px;
+
+}
+.ingredient-container span{
+  margin:0 10px;
+}
