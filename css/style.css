@@ -32,6 +32,7 @@
 }
 /* LAYOUT */
 .wrapper{
+  overflow:hidden;
   width:100vw;
   height:100vh;
   max-width:100;
@@ -43,6 +44,7 @@ header{
   line-height:150px;
 }
 .content{
+  overflow-y: auto;
   height:calc(100vh - 250px);
   padding-bottom:200px;
   padding-top:50px;
@@ -177,6 +179,9 @@ label.flex:after{
   height:100vh;
 }
 footer{
+  position:fixed;
+  bottom:0;
+  width:calc(100% - 50px);
   height:100px;
   line-height: 100px;
   color:#fff;
