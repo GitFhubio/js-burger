@@ -35,10 +35,6 @@ btn.addEventListener('click',function(){
         sum+=price;
       }
     }
-
-    // al posto di crearmi l'array da solo col push potevo fare:
-    // var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
-    // e avrei avuto direttamente l'array dei check da usare poi nella verifica
     if(selezionati.length<2){
       alert('Devi inserire più di un valore');
     }
@@ -50,3 +46,7 @@ btn.addEventListener('click',function(){
   }
 }
 )
+
+// al posto di crearmi l'array da solo col push potevo fare:
+    // var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+    // e avrei avuto direttamente l'array dei check da usare poi nella verifica
