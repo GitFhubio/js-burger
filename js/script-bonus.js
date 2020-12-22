@@ -2,7 +2,7 @@
 var minIngredients = 2;
 var burgerBaseCost = 50;
 var discount = 0.2;
-var coupons=['immanuelkant1724','cyberbug2077','nandomartellone90'];
+var coupons=['alfredo10','ottavio20','enrico30'];
 
 // ELEMENTI DOM
 var btn=document.getElementById('btn');
@@ -45,7 +45,6 @@ btn.addEventListener('click',function(){
     if(coupons.indexOf(discount.value) !== -1) {
       cost = cost - (cost*discount);
     }
-
     output.innerText = '$ ' + cost;
   }
 

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrapper clearfix">
+    <div class="logo brown">
+    </div>
+    <div class="main fl">
+      <header class="p50lr brown">
+        <h1>Create Your Burger</h1>
+      </header>
+      <div class="content p50lr">
+        <input id='burger-name' type="text" value="" placeholder="Name Your Burger">
+        <p>Ingredients</p>
+        <div class='ingredient-container flex'>
+          <label class="flex">
+              <img src="img/cheese.svg" alt="">
+            <span class="ingredient">Cheese</span><input type="checkbox" class="ingredient-checkbox" name="list[]" value='3.20'><span class="checkmark pinkred"></span>
+          </label>
+          <label class="flex">
+              <img src="img/egg.svg" alt="">
+              <span class="ingredient">Egg</span><input type="checkbox" class="ingredient-checkbox" name="list[]" value='2.75'> <span class="checkmark pinkred"></span>
+          </label>
+          <label class="flex">
+              <img src="img/mustard.svg" alt=""><span class="ingredient">Mustard</span><input type="checkbox" class="ingredient-checkbox" name="list[]" value='1.90'><span class="checkmark pinkred"></span>
+            </label>
+            <label class="flex">
+                <img src="img/tomato.svg" alt=""><span class="ingredient">Tomato</span><input type="checkbox" class="ingredient-checkbox" name="list[]" value='2.99'><span class="checkmark pinkred"></span>
+              </label>
+              <label class="flex">
+                  <img src="img/lettuce.svg" alt=""><span class="ingredient">Lettuce</span><input type="checkbox" class="ingredient-checkbox" name="list[]" value='2.10'><span class="checkmark pinkred"></span>
+                </label>
+                <label class="flex">
+                    <img src="img/ketchup.svg" alt=""><span class="ingredient">Ketchup</span><input type="checkbox" class="ingredient-checkbox" name="list[]" value='2'><span class="checkmark pinkred"></span>
+                  </label>
+                </div>
+                <div class="sconto-coupon flex">
+                  <label for="discount">Discount Coupon</label>
+                  <input class="lightbrown" type="text" id='discount' value="" placeholder="12345ABCDEF">
+                </div>
+                <div class="calculate">
+                  <button id='btn' type="button" class="brown" name="button">calculate</button>
+                </div>
+                <div id="extra">
+                </div>
+              </div>
+              <footer class="flex p50lr pinkred">
+                <div class="footer-l">
+                  <h2>Your Price</h2>
+                </div>
+                <div id="output">
+                $ 50</div>
+                </footer>
+              </div>
+              <div class="sidebar lightbrown fl">
+              </div>
+            </div>
+            <script type="text/javascript" src="js/script-bonus.js">
+            </script>
+          </body>
+          </html>
