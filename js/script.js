@@ -47,6 +47,24 @@ btn.addEventListener('click',function(){
 }
 )
 
-// al posto di crearmi l'array da solo col push potevo fare:
+  // OPPURE AL POSTO DI FARMI L'ARRAY DA SOLO:
     // var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
-    // e avrei avuto direttamente l'array dei check da usare poi nella verifica
+
+// CHIEDERE AD ALFREDO ED ENRICO SE SI POTEVA FARE MEGLIO MAGARI CON UN ON CHANGE NON LO SO
+
+//   var extra=document.getElementById('extra');
+//    var checkboxes = document.querySelectorAll('input[type=checkbox]');
+//        var price;
+//     for (var i = 0; i < checkboxes.length; i++) {
+//       var checkbox=checkboxes[i];
+//     checkbox.addEventListener('click',function(){
+//      price=parseFloat(this.value);
+//           if(this.checked){
+//             extra.innerHTML+= '+' + price;
+//           } else{
+//             extra.innerHTML+='-'+ price;
+//           }
+//
+//       }
+//     )
+// }
