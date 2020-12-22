@@ -50,20 +50,26 @@ btn.addEventListener('click',function(){
 
 });
 
-// CHIEDERE AD ALFREDO ED ENRICO SE SI POTEVA FARE MEGLIO MAGARI CON UN ON CHANGE NON LO SO
 
-//   var extra=document.getElementById('extra');
-//    var checkboxes = document.querySelectorAll('input[type=checkbox]');
-//     var price;
-//     for (var i = 0; i < checkboxes.length; i++) {
-//     checkboxes[i].addEventListener('click',function(){
-//      price=parseFloat(this.value);
-//           if(this.checked){
-//             extra.innerHTML+= '+' + price;
-//           } else{
-//             extra.innerHTML+='-'+ price;
-//           }
-//
-//       }
-//     )
-// }
+
+  var extra=document.getElementById('extra');
+    var price;
+    var arrayX=[];
+    for (var i = 0; i < checkboxes.length; i++) {
+    checkboxes[i].addEventListener('click',function(){
+     price=parseFloat(this.value);
+          if(this.checked){
+           arrayX.push(price);
+          } else{
+            arrayX=arrayX.filter(function(e){
+             return e!==price;
+            })
+
+
+          }
+
+console.log(arrayX);
+      }
+    )
+
+}
