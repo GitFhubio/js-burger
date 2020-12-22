@@ -32,7 +32,7 @@
 }
 /* LAYOUT */
 .wrapper{
-  overflow:hidden;
+  overflow-y:hidden;
   width:100vw;
   height:100vh;
   max-width:100;
@@ -41,7 +41,7 @@
 }
 header{
   height:150px;
-  line-height:150px;
+  align-items: center;
 }
 .content{
   overflow-y: auto;
@@ -49,18 +49,23 @@ header{
   padding-bottom:200px;
   padding-top:50px;
 }
-
+.titolo{
+  position:absolute;
+  z-index:2;
+}
 .logo{
   background-image: url('../img/burger-top.png');
   background-size: contain;
   position:fixed;
-  right:10px;
+  z-index:2;
+  right:0;
   top:-80px;
   width:300px;
   height:300px;
   border-radius: 50%;
 }
 #burger-name{
+  max-width:100%;
   border:none;
   font-size: 26px;
   margin-bottom: 40px;
@@ -180,6 +185,7 @@ label.flex:after{
 }
 footer{
   position:fixed;
+  z-index:2;
   bottom:0;
   width:calc(100% - 50px);
   height:100px;
@@ -189,4 +195,27 @@ footer{
 }
 #output{
   font-size:30px;
+}
+@media screen and (max-width:630px)
+{
+  .ingredient-container{
+    flex-wrap: nowrap;
+    min-height:420px;
+  }
+  .sidebar{
+  display:none;
+}
+#burger-name
+{
+  margin-top: 40px;
+}
+.logo{
+  top:10px;
+  width:220px;
+  height:220px;
+  right:-4px;
+}
+footer,header,.main{
+width:100%;
+}
 }
