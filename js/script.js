@@ -8,22 +8,31 @@
 // - se inserisce un codice coupon tra quelli che già abbiamo in lista, applichiamo uno sconto del 20% sul totale.
 // - tutto ciò viene "generato", quindi calcolato (prezzo e/o sconto), al click sul pulsante.
 
+// "COSTANTI"
+var minIngredients = 2;
+var baseprice = 50;
+var discount = 0.8;
+var coupon=['immanuelkant1724','cyberbug2077','nandomartellone90'];
+
+// ELEMENTI DOM
 var btn=document.getElementById('btn');
 var ingredients=document.getElementsByClassName('ingredient-container')[0];
 var checkbox=ingredients.getElementsByTagName('input');
 var output=document.getElementById('output');
 var burgerName=document.getElementById('burger-name');
 var discount=document.getElementById('discount');
-var lista=[];
-var coupon=['immanuelkant1724','cyberbug2077','nandomartellone90'];
+
+// variabili accessorie
+
+var selezionati;
+var price;
+var sum;
 
 btn.addEventListener('click',function(){
   btn.classList.add('clicked');
   btn.classList.remove('brown');
-  var sum=0;
-  var baseprice=50;
-  var selezionati=[];
-  var price;
+  sum=0;
+  selezionati=[];
 
   if(burgerName.value=='')
   {alert('Devi inserire il nome del tuo hamburger');}
@@ -35,7 +44,7 @@ btn.addEventListener('click',function(){
         sum+=price;
       }
     }
-    if(selezionati.length<2){
+    if(selezionati.length<minIngredients){
       alert('Devi inserire più di un valore');
     }
     // console.log(selezionati);
