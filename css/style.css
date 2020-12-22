@@ -74,25 +74,10 @@ header{
   font-size: 24px;
   margin-bottom: 10px;
 }
-
-label>div{
-  width:50px;
-  height:50px;
-  border-radius: 50%;
-}
 label img{
-  width:100%;
+  width:50px;
   height:auto;
 }
-#cheese,#lettuce,#egg{
-  background-color:#ff0050;
-}
-#tomato{
-  background-color:#72f0e9;
-}
-#ketchup{background-color:#f797f4;}
-#mustard{background-color:#ba675b;}
-
 .ingredient-container{
   flex-direction: column;
   flex-wrap: wrap;
