@@ -63,10 +63,9 @@ btn.addEventListener('click',function(){
 
 //   var extra=document.getElementById('extra');
 //    var checkboxes = document.querySelectorAll('input[type=checkbox]');
-//        var price;
+//     var price;
 //     for (var i = 0; i < checkboxes.length; i++) {
-//       var checkbox=checkboxes[i];
-//     checkbox.addEventListener('click',function(){
+//     checkboxes[i].addEventListener('click',function(){
 //      price=parseFloat(this.value);
 //           if(this.checked){
 //             extra.innerHTML+= '+' + price;
