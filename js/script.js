@@ -12,7 +12,7 @@ var btn=document.getElementById('btn');
 var ingredients=document.getElementsByClassName('ingredient-container')[0];
 var checkbox=ingredients.getElementsByTagName('input');
 var output=document.getElementById('output');
-var nameyourhumburger=document.getElementById('nameyourhamburger');
+var burgerName=document.getElementById('burger-name');
 var discount=document.getElementById('discount');
 var lista=[];
 var coupon=['immanuelkant1724','cyberbug2077','nandomartellone90'];
@@ -25,7 +25,7 @@ btn.addEventListener('click',function(){
   var selezionati=[];
   var price;
 
-  if(nameyourhamburger.value=='')
+  if(burgerName.value=='')
   {alert('Devi inserire il nome del tuo hamburger');}
   else{
     for (var i = 0; i < checkbox.length; i++) {
