@@ -31,7 +31,7 @@ btn.addEventListener('click',function(){
   selezionati=[];
 
   if(burgerName.value=='')
-  {alert('Devi inserire il nome del tuo hamburger');}
+  {alert('Scegli un nome per il tuo burger');}
   else{
     for (var i = 0; i < checkboxes.length; i++) {
       if(checkboxes[i].checked){
@@ -41,7 +41,7 @@ btn.addEventListener('click',function(){
       }
     }
     if(selezionati.length<minIngredients){
-      alert('Devi inserire più di un valore');
+      alert('Seleziona almeno ' + minIngredients + ' ingredienti');
     }
     // console.log(selezionati);
     output.innerHTML='$ '+ (baseprice+sum);
