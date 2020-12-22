@@ -64,17 +64,17 @@ btn.addEventListener('click',function(){
           } else{
 
             
-            // arrayX=arrayX.filter(function(e){
-            //  return e!==price;  })
+            arrayX=arrayX.filter(function(e){
+             return e!==price;  })
 
-for (var a = 0; a < arrayX.length; a++) {
-           if (arrayX[a]!==price) {
-              arrayY.push(arrayX[a]);}
-               arrayX=[];
-              for (var x = 0; x < arrayY.length; x++) {
-                arrayX.push(arrayY[x]);
-             }}
-}
+// for (var a = 0; a < arrayX.length; a++) {
+//            if (arrayX[a]!==price) {
+//               arrayY.push(arrayX[a]);}
+//                arrayX=[];
+//               for (var x = 0; x < arrayY.length; x++) {
+//                 arrayX.push(arrayY[x]);
+//              }}
+// }
 
 console.log(arrayX);
 
