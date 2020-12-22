@@ -130,12 +130,12 @@ label.flex input {
 }
 /* Style the checkmark/indicator */
 .ingredient-container .flex .checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
+  left: 6px;
+  width: 12px;
+  height: 25px;
+  bottom:4px;
   border: solid #000;
-  border-width: 0 3px 3px 0;
+  border-width: 0 5px 5px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
