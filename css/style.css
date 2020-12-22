@@ -200,7 +200,7 @@ footer{
 {
   .ingredient-container{
     flex-wrap: nowrap;
-    min-height:420px;
+    height:420px;
   }
   .sidebar{
   display:none;
