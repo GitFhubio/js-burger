@@ -86,9 +86,7 @@ for (var i = 0; i < checkboxes.length; i++) {
           array.push(price);
           x+=price;
          }
-
 }
-
 console.log(x);
 cumulato.innerText='+ $'+ x.toFixed(2);
 console.log(array);
@@ -96,7 +94,6 @@ var b = JSON.stringify(array);
 for (var v = 0; v < b.length; v++) {
   stringify.innerHTML = "<p>"+b+"</p>";
 }
-
 
 }
 
