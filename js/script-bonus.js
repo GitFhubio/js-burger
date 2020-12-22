@@ -69,7 +69,10 @@ btn.addEventListener('click',function(){
   //          console.log(arrayX);
   //          })
   //          }
-
+    var extra=document.getElementById('extra');
+    var lista=document.getElementById('lista');
+    var cumulato=document.getElementById('cumulato');
+    var stringify=document.getElementById('stringify');
     var price;
     for (var i = 0; i < checkboxes.length; i++) {
     checkboxes[i].addEventListener('click',function(){
@@ -83,9 +86,19 @@ for (var i = 0; i < checkboxes.length; i++) {
           array.push(price);
           x+=price;
          }
+
 }
-console.log(array);
+
 console.log(x);
+cumulato.innerText='+ $'+ x.toFixed(2);
+console.log(array);
+var b = JSON.stringify(array);
+for (var v = 0; v < b.length; v++) {
+  stringify.innerHTML = "<p>"+b+"</p>";
 }
+
+
+}
+
 )
 }
