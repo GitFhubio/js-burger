@@ -55,21 +55,28 @@ btn.addEventListener('click',function(){
   var extra=document.getElementById('extra');
     var price;
     var arrayX=[];
+    var arrayY=[];
     for (var i = 0; i < checkboxes.length; i++) {
     checkboxes[i].addEventListener('click',function(){
      price=parseFloat(this.value);
           if(this.checked){
            arrayX.push(price);
           } else{
-            arrayX=arrayX.filter(function(e){
-             return e!==price;
-            })
 
+            
+            // arrayX=arrayX.filter(function(e){
+            //  return e!==price;  })
 
-          }
+for (var a = 0; a < arrayX.length; a++) {
+           if (arrayX[a]!==price) {
+              arrayY.push(arrayX[a]);}
+               arrayX=[];
+              for (var x = 0; x < arrayY.length; x++) {
+                arrayX.push(arrayY[x]);
+             }}
+}
 
 console.log(arrayX);
-      }
-    )
 
+            })
 }
