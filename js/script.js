@@ -12,7 +12,7 @@ var btn=document.getElementById('btn');
 var ingredients=document.getElementsByClassName('ingredient-container')[0];
 var checkbox=ingredients.getElementsByTagName('input');
 var output=document.getElementById('output');
-var humburger=document.getElementById('hamburger');
+var nameyourhumburger=document.getElementById('nameyourhamburger');
 var discount=document.getElementById('discount');
 // var lista;
 var lista=[];
@@ -26,7 +26,7 @@ btn.addEventListener('click',function(){
   var selezionati=[];
   var price;
 
-  if(hamburger.value=='')
+  if(nameyourhamburger.value=='')
   {alert('Devi inserire il nome del tuo hamburger');}
   else{
     for (var i = 0; i < checkbox.length; i++) {
@@ -36,7 +36,7 @@ btn.addEventListener('click',function(){
         sum+=price;
       }
     }
-    
+
     // al posto di crearmi l'array da solo col push potevo fare:
     // var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
     // e avrei avuto direttamente l'array dei check da usare poi nella verifica
