@@ -63,9 +63,9 @@ btn.addEventListener('click',function(){
            arrayX.push(price);
           } else{
 
-            
-            arrayX=arrayX.filter(function(e){
+          arrayX=arrayX.filter(function(e){
              return e!==price;  })
+           }
 
 // for (var a = 0; a < arrayX.length; a++) {
 //            if (arrayX[a]!==price) {
