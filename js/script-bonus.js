@@ -55,7 +55,6 @@ btn.addEventListener('click',function(){
   // var extra=document.getElementById('extra');
   //   var price;
   //   var arrayX=[];
-  //   var arrayY=[];
   //   for (var i = 0; i < checkboxes.length; i++) {
   //   checkboxes[i].addEventListener('click',function(){
   //    price=parseFloat(this.value);
@@ -90,9 +89,12 @@ for (var i = 0; i < checkboxes.length; i++) {
 console.log(x);
 cumulato.innerText='+ $'+ x.toFixed(2);
 console.log(array);
-var b = JSON.stringify(array);
-for (var v = 0; v < b.length; v++) {
-  stringify.innerHTML = "<p>"+b+"</p>";
+var string = JSON.stringify(array);
+var substring=string.replace(/[\[\]]+/g,' ');
+console.log(substring);
+var finalstring=substring.replaceAll(',','+');
+for (var v = 0; v < finalstring.length; v++) {
+  stringify.innerHTML = "<p>"+finalstring+"</p>";
 }
 
 }
