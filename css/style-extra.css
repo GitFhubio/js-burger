@@ -1,8 +1,4 @@
-/* RESET CSS */
-/* *{padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-} */
+
 /* CLASSI UTILITY */
 .clicked{
   background-color: #fc6f25;
@@ -40,19 +36,17 @@
 }
 .main{width:calc(100% - 50px);
 }
-header{
+header .container{
   height:150px;
-  align-items: center;
+  line-height: 150px;
+  font-size: 35px;
+  font-weight: 600;
 }
 .content{
   overflow-y: auto;
   height:calc(100vh - 250px);
   padding-bottom:200px;
   padding-top:50px;
-}
-.titolo{
-  position:absolute;
-  z-index:2;
 }
 .logo{
   background-image: url('../img/burger-top.png');
