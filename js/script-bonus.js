@@ -92,9 +92,12 @@ console.log(array);
 var string = JSON.stringify(array);
 var substring=string.replace(/[\[\]]+/g,' ');
 console.log(substring);
-var finalstring=substring.replaceAll(',','+');
+var finalstring=substring.replaceAll(',',' + $ ');
+var newHTML='$ ';
 for (var v = 0; v < finalstring.length; v++) {
-  stringify.innerHTML = "<p>"+finalstring+"</p>";
+  if(finalstring.length<2){
+  newHTML='';}
+  stringify.innerText =newHTML+finalstring;
 }
 
 }
