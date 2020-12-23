@@ -18,9 +18,6 @@
   content:"";
   clear:both;
 }
-.flex{
-  display:flex;
-}
 .fl{
   float:left;
 }
@@ -80,8 +77,7 @@ label img{
   flex-wrap: wrap;
   height:250px;
 }
-label.flex{
-  align-items:center;
+.ingredient-container  label{
   margin:10px 0;
 }
 .ingredient-container span{
@@ -91,7 +87,7 @@ label.flex{
   border-radius: 50%;
 }
 
-label.flex {
+.ingredient-container label {
   position:relative;
   cursor: pointer;
   -webkit-user-select: none;
@@ -100,7 +96,7 @@ label.flex {
   user-select: none;
 }
 
-label.flex input {
+.ingredient-container label input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -110,18 +106,20 @@ label.flex input {
 
 /* Create a custom checkbox */
 .checkmark {
-  left:120px;
+  top:10px;
+  position:absolute;
+  left:130px;
   height: 25px;
   width: 25px;
   border-radius:3px;
 }
 
 /* Show the checkmark when checked */
-.ingredient-container .flex input:checked ~ .checkmark:after {
+.ingredient-container input:checked ~ .checkmark:after {
   display: block;
 }
 /* Create the checkmark/indicator (hidden when not checked) Style the checkmark/indicator */
-.ingredient-container .flex .checkmark:after {
+.ingredient-container .checkmark:after {
   content: "";
   display: block;
   position:relative;
@@ -132,36 +130,35 @@ label.flex input {
   border-color: transparent transparent pink green;
   transform: rotate(80deg);
 }
-label.flex span:first-of-type:before {
+.ingredient-container label span:first-of-type:before {
   position:absolute;
   z-index:3;
   content: "";
   display:block;
-  left:160px;
-  bottom:25px;
+  left:156px;
+  bottom:30px;
   width:0;
   border-style: solid;
   border-width: 8px 8px 8px 8px;
   border-color: transparent transparent black black;
 }
-label.flex span:last-of-type:before {
+.ingredient-container label span:last-of-type:before {
   position:absolute;
   z-index:1;
   content: "";
   display:block;
-  left:154px;
-  bottom:18px;
+  bottom:7px;
   width:0;
   border-style: solid;
   border-width: 8px 8px 8px 8px;
   border-color: orange transparent transparent transparent;
-      transform: rotate(-30deg);
+      transform: rotate(-25deg);
 }
-label.flex:after{
+.ingredient-container label:after{
   position:relative;
   content:'add';
   color: red;
-  left:10px;
+  left:40px;
 }
 label.fl {
 height:30px;
