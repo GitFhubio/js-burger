@@ -1,0 +1,237 @@
+/* RESET CSS */
+/* *{padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
+/* CLASSI UTILITY */
+.clicked{
+  background-color: #fc6f25;
+  border:2px solid black;
+}
+.brown{
+  background-color:#ffba25;
+}
+.pinkred{background-color: #cd2c4f;
+}
+.lightbrown{
+  background-color:#fff3de;
+}
+.p50lr{
+  padding:0 50px;
+}
+.clearfix::after{
+  display:table;
+  content:"";
+  clear:both;
+}
+.flex{
+  display:flex;
+}
+.fl{
+  float:left;
+}
+/* LAYOUT */
+.wrapper{
+  overflow-y:hidden;
+  width:100vw;
+  height:100vh;
+  max-width:100;
+}
+.main{width:calc(100% - 50px);
+}
+header{
+  height:150px;
+  align-items: center;
+}
+.content{
+  overflow-y: auto;
+  height:calc(100vh - 250px);
+  padding-bottom:200px;
+  padding-top:50px;
+}
+.titolo{
+  position:absolute;
+  z-index:2;
+}
+.logo{
+  background-image: url('../img/burger-top.png');
+  background-size: contain;
+  position:fixed;
+  z-index:2;
+  right:0;
+  top:-80px;
+  width:300px;
+  height:300px;
+  border-radius: 50%;
+}
+#burger-name{
+  max-width:100%;
+  border:none;
+  font-size: 26px;
+  margin-bottom: 40px;
+}
+/* INGREDIENTS */
+
+.content p{
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+label img{
+  width:50px;
+  height:auto;
+}
+.ingredient-container{
+  flex-direction: column;
+  flex-wrap: wrap;
+  height:250px;
+}
+label.flex{
+  align-items:center;
+  margin:10px 0;
+}
+.ingredient-container span{
+  margin-left: 20px;
+}
+.ingredient-container img{
+  border-radius: 50%;
+}
+
+label.flex {
+  position:relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+label.flex input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  left:120px;
+  height: 25px;
+  width: 25px;
+  border-radius:3px;
+}
+
+/* Show the checkmark when checked */
+.ingredient-container .flex input:checked ~ .checkmark:after {
+  display: block;
+}
+/* Create the checkmark/indicator (hidden when not checked) Style the checkmark/indicator */
+.ingredient-container .flex .checkmark:after {
+  content: "";
+  display: block;
+  position:relative;
+  left:5px;
+  width:0;
+  border-style: solid;
+  border-width: 8px 8px 8px 8px;
+  border-color: transparent transparent pink green;
+  transform: rotate(80deg);
+}
+label.flex span:first-of-type:before {
+  position:absolute;
+  z-index:3;
+  content: "";
+  display:block;
+  left:160px;
+  bottom:25px;
+  width:0;
+  border-style: solid;
+  border-width: 8px 8px 8px 8px;
+  border-color: transparent transparent black black;
+}
+label.flex span:last-of-type:before {
+  position:absolute;
+  z-index:1;
+  content: "";
+  display:block;
+  left:154px;
+  bottom:18px;
+  width:0;
+  border-style: solid;
+  border-width: 8px 8px 8px 8px;
+  border-color: orange transparent transparent transparent;
+      transform: rotate(-30deg);
+}
+label.flex:after{
+  position:relative;
+  content:'add';
+  color: red;
+  left:10px;
+}
+.sconto-coupon{
+  justify-content:start;
+  align-items: center;
+}
+.sconto-coupon input{
+  margin-left:10px;
+  border:none;
+  width:80%;
+  height:30px;
+  border-radius:10px;
+}
+.calculate{
+  text-align: center;
+}
+#btn{
+  margin-top: 40px;
+  width:150px;
+  height:50px;
+  font-weight:600;
+  font-size: 18px;
+  border:none;
+  border-radius: 5px;
+}
+.sidebar{
+  width:50px;
+  height:100vh;
+}
+footer{
+  position:fixed;
+  z-index:2;
+  bottom:0;
+  width:calc(100% - 50px);
+  height:100px;
+  line-height: 100px;
+  color:#fff;
+  justify-content:space-between;
+}
+#output{
+  font-size:30px;
+}
+@media screen and (max-width:630px)
+{
+  .ingredient{
+    width:30px;
+    margin-right: 20px;
+  }
+  .ingredient-container{
+    flex-wrap: nowrap;
+    height:420px;
+  }
+  .sidebar{
+  display:none;
+}
+#burger-name
+{
+  margin-top: 40px;
+}
+.logo{
+  top:10px;
+  width:220px;
+  height:220px;
+  right:-4px;
+}
+footer,header,.main{
+width:100%;
+}
+}

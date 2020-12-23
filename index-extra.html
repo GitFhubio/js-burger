@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="css/style-extra.css">
+  <!-- Boostrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="logo brown">
+    </div>
+    <div class="main fl">
+      <header class="flex brown">
+        <div class="container">
+        <h1>Create Your Burger</h1>
+        </div>
+      </header>
+      <div class="content">
+        <div class="container">
+        <input id='burger-name' type="text" value="" placeholder="Name Your Burger">
+        <p>Ingredients</p>
+        <div class='row ingredient-container'>
+          <label class="flex col-sm-6 col-xs-12">
+              <img src="img/cheese.svg" alt="">
+            <span class="ingredient">Cheese</span><input type="checkbox" class="ingredient-checkbox" name="list[]" value='3.20'><span class="checkmark pinkred"></span>
+          </label>
+          <label class="flex col-sm-6 col-xs-12">
+              <img src="img/cheese.svg" alt="">
+            <span class="ingredient">Cheese</span><input type="checkbox" class="ingredient-checkbox" name="list[]" value='3.20'><span class="checkmark pinkred"></span>
+          </label>
+          <label class="flex col-sm-6 col-xs-12">
+              <img src="img/cheese.svg" alt="">
+            <span class="ingredient">Cheese</span><input type="checkbox" class="ingredient-checkbox" name="list[]" value='3.20'><span class="checkmark pinkred"></span>
+          </label>
+          <label class="flex col-sm-6 col-xs-12">
+              <img src="img/cheese.svg" alt="">
+            <span class="ingredient">Cheese</span><input type="checkbox" class="ingredient-checkbox" name="list[]" value='3.20'><span class="checkmark pinkred"></span>
+          </label>
+          <label class="flex col-sm-6 col-xs-12">
+              <img src="img/cheese.svg" alt="">
+            <span class="ingredient">Cheese</span><input type="checkbox" class="ingredient-checkbox" name="list[]" value='3.20'><span class="checkmark pinkred"></span>
+          </label>
+          <label class="flex col-sm-6 col-xs-12">
+              <img src="img/cheese.svg" alt="">
+            <span class="ingredient">Cheese</span><input type="checkbox" class="ingredient-checkbox" name="list[]" value='3.20'><span class="checkmark pinkred"></span>
+          </label>
+                </div>
+                <div class="sconto-coupon ">
+                  <label for="discount">Discount Coupon</label>
+                  <input class="lightbrown" type="text" id='discount' value="" placeholder="12345ABCDEF">
+                </div>
+                <div class="calculate">
+                  <button id='btn' type="button" class="brown" name="button">calculate</button>
+                </div>
+
+                <div id="extra">
+                </div>
+                <div id="stringify">
+                </div>
+                <div id="cumulato">
+                </div>
+               <ul id="lista">
+                </ul>
+              </div>
+             </div>
+              <footer class="flex pinkred">
+                <div class="container">
+                <div class="footer-l">
+                  <h2>Your Price</h2>
+                </div>
+                <div id="output">
+                $ 50</div>
+               </div>
+                </footer>
+          </div>
+              <div class="sidebar lightbrown fl">
+              </div>
+
+
+            <script type="text/javascript" src="js/script-extra.js">
+            </script>
+          </body>
+          </html>
