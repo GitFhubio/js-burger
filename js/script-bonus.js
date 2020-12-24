@@ -89,18 +89,31 @@ for (var i = 0; i < checkboxes.length; i++) {
 console.log(x);
 cumulato.innerText='+ $'+ x.toFixed(2);
 console.log(array);
-var string = JSON.stringify(array);
-var substring=string.replace(/[\[\]]+/g,' ');
-console.log(substring);
-var finalstring=substring.replaceAll(',',' + $ ');
-var newHTML='$ ';
-for (var v = 0; v < finalstring.length; v++) {
-  if(finalstring.length<2){
-  newHTML='';}
-  stringify.innerText =newHTML+finalstring;
-}
+// var string = JSON.stringify(array);
+// var substring=string.replace(/[\[\]]+/g,' ');
+// console.log(substring);
+// var finalstring=substring.replaceAll(',',' + $ ');
+// var newHTML='$ ';
+// for (var v = 0; v < finalstring.length; v++) {
+//   if(finalstring.length<2){
+//   newHTML='';}
+//   stringify.innerText =newHTML+finalstring;
+// }
+
+// non c'era bisogno di json stringify perché banalmente
+// quanto segue mi da lo stesso come output
+
+ stringify.innerHTML =array;
+
+ //
+ //
+ // var p=array.toString();
+ // stringify.innerText =p;
 
 }
 
 )
+
+
+
 }
